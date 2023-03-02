@@ -15,6 +15,10 @@ const thoughtSchema = new Schema(
             // use a getter method to format the timestamp on query
             get: createdAtVal => dateFormat(createdAtVal)
         },
+        userId: {
+            type: String,
+            required: false
+        },
         username: {
             type: String,
             required: true
