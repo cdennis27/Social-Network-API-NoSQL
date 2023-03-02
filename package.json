@@ -1,0 +1,23 @@
+{
+  "name": "socialnetworkapi",
+  "version": "1.0.0",
+  "description": "NoSQL database for a social network application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index",
+    "seed": "node utils/seed",
+    "heroku-postbuild": "node utils/seed.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  },
+  "author": "cezar",
+  "license": "MIT"
+}
